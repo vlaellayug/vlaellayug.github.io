@@ -31,4 +31,14 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    function calculateYears(){
+        var yearStarted = 2017;
+        const d = new Date();
+        let year = d.getFullYear();
+        var numOfYears = year - yearStarted;
+        document.getElementById("numOfYears").innerText = numOfYears;
+    }
+
+    calculateYears();
+
 });
