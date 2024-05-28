@@ -106,5 +106,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script>
+      function randomIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+      const rndInt = randomIntFromInterval(1, 3);
+      var fileName = "https://vlaellayug.github.io/assets/img/og_image" + rndInt + ".png";
+
+      console.log(fileName);
+
+      document.querySelector("meta[property='og:image']").setAttribute("content", fileName);
+    </script>
   </body>
 </html>
